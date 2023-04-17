@@ -1,0 +1,302 @@
+/* +++++++++ FONTS +++++++++ */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Libre Franklin', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Barlow', sans-serif; */
+/* ============================== */
+
+
+
+/* ========= BASE TUNING ========= */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol, li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+/* ============================== */
+
+
+
+/* ========= OVERALL CLASSES ========= */
+.container {
+    margin: 0 auto;
+    padding: 0 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    opacity: 0;
+}
+/* ============================== */
+
+
+
+/* ========= HEADER ========= */
+.header {
+    margin: 0 auto;
+    padding: 0 15px;
+
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.nav-link {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+}
+
+.user {
+    margin-left: 45px;
+
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.search {
+    padding: 10px 15px;
+    background: rgba(66, 55, 55, .4);
+    border-radius: 30px;
+}
+
+.search input {
+    border: 0;
+    outline: none;
+    background: transparent;
+    color: #fff;
+}
+
+.icon {
+    margin-left: 35px;
+    cursor: pointer;
+}
+/* ============================== */
+
+
+
+/* ========= SLIDER #1 ========= */
+.slider-1 {
+    display: flex;
+
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 1), rgba(81, 81, 81, 1));
+    font-family: 'Barlow', sans-serif;
+    color: #fff;
+}
+
+.side-block {
+    padding: 0 30px;
+
+    height: 100vh;
+    background: #9B9898;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    writing-mode: tb-rl;
+
+    transform: rotate(180deg);
+}
+
+.side-block__text {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 1em;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.main-block {
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.image {
+    margin-left: 30px;
+}
+
+.image__img {
+    width: 175%;
+}
+
+.text {
+    padding: 0 50px 0 90px;
+    text-align: right;
+}
+
+.text-title {
+    font-family: 'Barlow';
+    /*font-style: italic;*/
+    font-weight: 800;
+    font-size: 151px;
+    line-height: 181px;
+
+    position: relative;
+}
+
+.text-title::before {
+    position: absolute;
+    content: url(./images/icons/slider-1-object.png);
+    top: -45px;
+    left: 0;
+}
+
+.text-subtitle {
+    font-family: 'Barlow';
+    /*font-style: italic;*/
+    font-weight: 600;
+    font-size: 41px;
+    line-height: 49px;
+}
+
+.price {
+    font-family: 'Barlow';
+    /*font-style: italic;*/
+    font-weight: 600;
+    font-size: 71px;
+    line-height: 85px;
+}
+
+.text-description {
+    font-family: 'Barlow';
+    /*font-style: italic;*/
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+
+    margin-left: 69px;
+}
+/* ============================== */
+
+
+
+/* ========= SLIDER #2 ========= */
+.slider-2 {
+    padding: 0 40px;
+
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+    background: rgba(57, 37, 32, .9);
+    font-family: 'Libre Franklin', sans-serif;
+    color: #fff;
+}
+
+.product-description {
+    padding: 0 40px;
+    width: 50%;
+}
+
+.product-name {
+    font-weight: 400;
+    font-size: 43px;
+    line-height: 90%;
+    /* or 39px */
+    color: rgba(36, 175, 205, 1);
+}
+
+.product-class {
+    margin-top: 35px;
+    margin-bottom: 50px;
+
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 90%;
+    /* or 115px */
+    text-transform: uppercase;
+    color: #E5E4E4;
+}
+
+.product-description__text {
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 31px;
+    color: #FFFFFF;
+}
+
+.product-price {
+    margin-top: 40px;
+
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 73px;
+    color: #E6E6E6;
+}
+
+.product-price span {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 41px;
+    color: #6C6C6C;
+    text-decoration: line-through;
+}
+
+.product-image {
+    width: 50%;
+}
+
+.product-image img {
+    width: 100%;
+}
+/* ============================== */
+
+
+
+/* ========= SLIDER #3 ========= */
+.slider-3 {
+    padding: 0 40px;
+
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(purple 70%, blue);
+    font-family: 'Libre Franklin', sans-serif;
+    color: #fff;
+}
+
+.slider-3 .product-name {
+    font-size: 23px;
+}
+
+.slider-3 .product-class {
+    font-size: 70px;
+}
+/* ============================== */

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My 9th webpage, made by myself">
+    <meta name="keywords" content="web development, html, css, practice, free template">
+    <title>NIKE</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <!--BootsTrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <!-- STYLE -->
+    <style>
+        .nav-link {color: #fff}
+        .nav-link:hover {color: #fff}
+        .btn {
+            margin-top: 50px;
+            padding: 15px 54px;
+
+            font-family: 'Barlow';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 31px;
+            line-height: 37px;
+            text-transform: uppercase;
+            color: #000000;
+
+            background: #999999;
+            border-radius: 71px;
+        }
+        .blue {
+            background: rgba(36, 175, 205, 1);
+        }
+        .green {
+            color: rgba(60, 205, 32, 1);
+        }
+        .greenbg {
+            background: rgba(60, 205, 32, 1);
+        }
+        .header {
+            position: absolute;
+            top: 0;
+            z-index: 10000;
+        }
+    </style>
+</head>
+<body>
+<!-- SLIDER SECTION STYLING -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <!-- ========== INDICATORS ========== -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <!-- ========== /INDICATORS ========== -->
+
+    <!-- ========== SLIDES ========== -->
+    <!-- SLIDER #1 -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="slider-1">
+                <div class="side-block">
+                    <p class="side-block__text">
+                        style takes over
+                    </p>
+                </div>
+                <div class="main-block">
+                    <div class="image">
+                        <img src="./images/slider-1-img.png" class="image__img">
+                    </div>
+                    <div class="text">
+                        <h1 class="text-title">AIR MAX</h1>
+                        <p class="text-subtitle">NIKE AIR MAX 90</p>
+                        <p class="price">$98</p>
+                        <p class="text-description">
+                            We do that by creating groundbreaking sport innovations, by making our products more sustainably, by building a creative and diverse global team and by making a positive impact in communities where we live and work.
+                        </p>
+                        <a href="#" class="btn">add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /SLIDER #1 -->
+
+        <!-- SLIDER #2 -->
+        <div class="carousel-item">
+            <div class="slider-2">
+                <div class="product-description">
+                    <h3 class="product-name">
+                        Zoom Pegasus
+                    </h3>
+                    <h2 class="product-class">
+                        air 32
+                    </h2>
+                    <p class="product-description__text">
+                        The Men’s Nike AIR Zoom Pegasus 32 is a sports shoe combines a lightweight contoured nylon plate for firm grip.
+                    </p>
+                    <p class="product-price"><span>$170</span> $120</p>
+                    <a href="#" class="btn blue">add to cart</a>
+                </div>
+                <div class="product-image">
+                    <img src="./images/slider-2-img.png">
+                </div>
+            </div>
+        </div>
+        <!-- /SLIDER #2 -->
+
+        <!-- /SLIDER #3 -->
+        <div class="carousel-item">
+            <div class="slider-3">
+                <div class="product-description">
+                    <h3 class="product-name green">
+                        Dynamic Fit Support
+                    </h3>
+                    <h2 class="product-class">
+                        Dynamic Fit
+                    </h2>
+                    <p class="product-description__text">
+                        The Men’s Nike Dunamic Fit is a sports shoe combines a lightweight contoured nylon plate for firm grip.
+                    </p>
+                    <p class="product-price">$150</p>
+                    <a href="#" class="btn greenbg">add to cart</a>
+                </div>
+                <div class="product-image">
+                    <img src="./images/slider-3-img.png">
+                </div>
+            </div>
+        </div>
+        <!-- /SLIDER #3 -->
+    </div>
+    <!-- ========== /SLIDES ========== -->
+
+    <!-- ========== BUTTONS ========== -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    <!-- ========== /BUTTONS ========== -->
+
+    <!-- ========== HEADER ========== -->
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="./images/icons/nike.png" alt="Nike logo">
+            </div>
+            <div class="nav">
+                <ul class="navbar">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">New Release</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Male</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Female</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Kids</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Collection</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="user">
+                <div class="search">
+                    <img src="./images/icons/search.png" alt="search icon">
+                    <input type="text" value="Search">
+                </div>
+                <img src="./images/icons/home.png" alt="home icon" class="icon">
+                <img src="./images/icons/log.png" alt="log icon" class="icon">
+            </div>
+        </header>
+    </div>
+    <!-- ========== /HEADER ========== -->
+</div>
+<!-- /SLIDER SECTION -->
+
+<!-- BootsTrap JS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
